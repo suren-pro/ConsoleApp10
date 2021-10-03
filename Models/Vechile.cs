@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp10.Models
 {
-    abstract class Vechile
+    abstract class Vechile:IDrive
     {
         public int MaxSpeed { get; set; }
         public int SeatCount { get; set; }
@@ -15,5 +15,7 @@ namespace ConsoleApp10.Models
             MaxSpeed = maxSpeed;
             SeatCount = seatCount;
         }
+
+        public abstract void Drive();
     }
 }

@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp10.Models
 {
-    abstract class Car : Vechile,IDrive
+    abstract class Car : Vechile
     {
         public Car(int maxSpeed, int seatCount) : base(maxSpeed, seatCount)
         {
         }
-
-        public abstract void Drive();
     }
 }
