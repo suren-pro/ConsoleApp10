@@ -7,11 +7,9 @@ namespace ConsoleApp10
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
             Truck truck = new Truck(120,2);
-            truck.Drive();
-            Stroller stroller = new Stroller();
-            stroller.Drive();
+            Garage garage = new Garage();
+            garage.SelectToDrive(truck);
         }
     }
 }
