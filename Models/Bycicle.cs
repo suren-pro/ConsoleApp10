@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp10.Models
 {
-    class Bycicle : Vechile,IDrive
+    class Bycicle :IDrive
     {
-        public Bycicle(int maxSpeed, int seatCount) : base(maxSpeed, seatCount)
-        {
-        }
-
         public void Drive()
         {
             Console.WriteLine("Bycicle is driving");

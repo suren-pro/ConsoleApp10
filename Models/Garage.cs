@@ -8,9 +8,17 @@ namespace ConsoleApp10.Models
 {
     class Garage
     {
-        public void SelectToDrive(IDrive vechile)
+        List<IDrive> items=new List<IDrive>();
+        public void AddItem(IDrive drive)
         {
-            vechile.Drive();
+            items.Add(drive);
+        }
+        public void TryAll()
+        {
+            foreach (var item in items)
+            {
+                item.Drive();
+            }
         }
     }
 }
