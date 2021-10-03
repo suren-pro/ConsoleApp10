@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp10.Models
 {
-    class Hatchback : Vechile
+    class Hatchback : Vechile,IDrive
     {
         public Hatchback(int maxSpeed, int seatCount) : base(maxSpeed, seatCount)
         {
         }
 
-        public override void Drive()
+        public  void Drive()
         {
             Console.WriteLine("Hetchback is driving");
 

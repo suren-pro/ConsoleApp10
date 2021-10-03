@@ -10,7 +10,6 @@ namespace ConsoleApp10.Models
     {
         public int MaxSpeed { get; set; }
         public int SeatCount { get; set; }
-        public abstract void Drive();
         public Vechile(int maxSpeed,int seatCount)
         {
             MaxSpeed = maxSpeed;

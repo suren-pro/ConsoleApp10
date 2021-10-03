@@ -10,6 +10,8 @@ namespace ConsoleApp10
             Console.WriteLine("Hello World!");
             Truck truck = new Truck(120,2);
             truck.Drive();
+            Stroller stroller = new Stroller();
+            stroller.Drive();
         }
     }
 }
